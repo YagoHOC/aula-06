@@ -1,0 +1,36 @@
+const bool1 = true
+const bool2 = false
+const bool3 = !bool2
+
+let resultado = bool1 && bool2
+console.log("a. ", resultado)
+
+resultado = bool1 && bool2 && bool3
+console.log("b. ", resultado)
+
+resultado = !resultado && (bool1 || bool2)
+console.log("c. ", resultado)
+
+console.log("d. ", typeof resultado)
+
+Console: 
+a. false
+b. false
+c. true
+d. boolean
+
+Seu colega se aproxima de você falando que o código dele não
+funciona como devia. Vamos ajudá-lo: consegue perceber algum
+problema? O que será impresso no console?
+
+let primeiroNumero = prompt("Digite um numero!")
+let segundoNumero = prompt("Digite outro numero!")
+const soma = primeiroNumero + segundoNumero
+console.log(soma)
+
+As variáveis estão como string, as linhas deveriam ser assim:
+
+let primeiroNumero = Number(prompt("Digite um numero!"))
+let segundoNumero = Number(prompt("Digite outro numero!"))
+
+
